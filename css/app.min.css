@@ -5627,7 +5627,6 @@ a {
 }
 
 .main-choose-set__buy-rolls {
-  position: relative;
   background: #FFFFFF;
 }
 
@@ -5678,6 +5677,7 @@ a {
   position: absolute;
   top: 150px;
   left: 0;
+  padding: 0;
   width: 60px;
   height: 60px;
   background: none;
@@ -5687,6 +5687,7 @@ a {
   position: absolute;
   top: 150px;
   right: 0;
+  padding: 0;
   width: 60px;
   height: 60px;
   background: none;
