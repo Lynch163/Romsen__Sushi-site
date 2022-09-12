@@ -1,0 +1,91 @@
+// card-product style
+.card-product__prev
+    font-size: 18px
+    line-height: 22.32px
+    transition-duration: .5s
+    &:hover
+        color: $o
+    & img
+        padding-right: 10px
+.card-product__next
+    font-size: 18px
+    line-height: 22.32px
+    transition-duration: .5s
+    & img
+        padding-left: 10px
+    &:hover
+        color: $o
+
+.card-product__wrap
+    background: $w
+    margin-bottom: 30px
+.card-product__image
+    & img
+        max-width: 430px
+
+.info__title
+    @include font-s (500,48px,59.57px)
+    margin-bottom: 10px
+.info__subtitle
+    @include font-s (300,18px,22.3px)
+    margin-bottom: 40px
+    color: $o
+.info__cost
+    margin-bottom: 22px
+.cost__price
+    @include font-s (700,24px,30.05px)
+    margin-right: 30px
+.cost__count
+    button:first-child
+        margin-right: 19px
+        background: none
+    span
+        @include font-s (700,36px,45.07px)
+        margin-right: 19px
+
+.info__compound
+    @include font-s (300,18px,22.3px)
+    margin-bottom: 31px
+.compound__title
+    @include font-s (500,18px,22.34px)
+
+.info__button
+    padding: 5px 65px
+    @include font-s (500,24px,29.78px)
+    background-color: $o
+    border-radius: 5px
+    color: $w
+
+.recomended-products
+    margin-bottom: 30px
+
+.recomended-products__title
+    @include font-s (500,24px,29.78px)
+    text-align: center
+    margin-bottom: 22px
+
+.button-wrap
+    width: 100%
+    position: absolute
+    top: 107px
+.recomended-products__button
+    width: 60px
+    height: 60px
+    padding: 0
+.recomended-products__items_relative
+    position: relative
+.recomended-products__item
+    img
+        margin-bottom: 10px
+.item__name
+    @include font-s (500,18px,22.34px)
+    text-align: center
+    margin-bottom: 12px
+.item__cost
+    p
+        @include font-s (700,24px,30.05px)
+        margin-right: 10px
+    img
+        width: 25px
+        height: 25px
+        margin-bottom: 0

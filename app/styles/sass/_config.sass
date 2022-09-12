@@ -1,0 +1,81 @@
+// USER VARIABLES SECTION
+
+// $accent: orange // Accent Color
+// $fontsize: 18px // Body Font Size
+// $textcolor: #000 // Text Color
+// $lineheight: 1.65 // Document Line Height
+$userfont: DINPro, sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('DINPro', normal, 300, '../fonts/DINPro-Light-300.woff2')
+@include font('DINPro', normal, 400, '../fonts/DINPro-Regular-400.woff2')
+@include font('DINPro', normal, 500, '../fonts/DINPro-Medium-500.woff2')
+@include font('DINPro', normal, 700, '../fonts/DINPro-Bold-700.woff2')
+
+// GENERAL CSS SETTINGS
+
+::placeholder
+	color: #666
+
+::selection
+	// background-color: $accent
+	color: #9821c7
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	color: #000000
+	font-family: DINPro
+
+h1,h2,h3,h4,h5,h6
+	padding: 0
+	margin: 0
+
+button
+	border: none
+	padding: 0
+
+p
+	margin: 0
+
+hr
+	margin: 0
+
+$b: #000000
+$o: #FF9846
+$g: #A4ACAD
+$w: #FFFFFF
+
+a
+	text-decoration: none
+	cursor: pointer
+	color: $b
+
+@mixin font-s ($fw,$fs,$lh)
+	font-weight: $fw
+	font-size: $fs
+	line-height: $lh
